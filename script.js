@@ -9,6 +9,7 @@ Person.prototype=greet(){
 
 function Employee(name, age, jobTitle) {
 	Employee.prototype=Person.prototype;
+	this.jobTitle=jobTitle;
 	Employee.prototype=jobGreet(){
 		console.log(Hello, my name is <name>, I am <age> years old, and my job title is <jobTitle>);
 	}
